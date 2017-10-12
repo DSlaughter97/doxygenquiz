@@ -1,3 +1,4 @@
+makefile:
 all:  build 
       doczip
 
