@@ -1,3 +1,4 @@
+///@file college.h
 //********************
 //Matthew Aberegg
 //Project 3
@@ -23,6 +24,8 @@ class College{
 	College(const College& other);
 	College& operator =(const College& other);
 	void add(course& c);
+	///@brief Adds a course to student's name
+	///@param Course which holds the class number,credit hours, and grade 
 	void remove(std::string coursename);
 	void display(std::ostream& outs);
 	double hours();

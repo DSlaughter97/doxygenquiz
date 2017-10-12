@@ -1,3 +1,4 @@
+///@file collegemain.cc
 /******************************************************
 	This is the main for Project 3, which asks you to 
     build a container that holds a list of college courses.
@@ -45,7 +46,10 @@ int main(){
         fin.open(filename.c_str());
     if(!fin.fail())
         mycollege.load(fin);
-        fin.close();
+	///@brief Loads the information stored in mycollege
+	///@param Has an istream to read from the file 
+        ///@param Return istream
+	fin.close();
 
 	choice = menu();
 	while(choice != 0){

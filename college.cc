@@ -1,3 +1,4 @@
+///@file college.cc
 //********************
 //Matthew Aberegg
 //Project 3
@@ -11,7 +12,11 @@
 #include<string>
 using namespace std;
 
-College::College(std::string s){
+College::College(std::string s)
+///@brief Default constructor for college class
+///@param String to hold name
+///@return Returns a default name and links the head of the list to NULL
+{
 	name = s;
 	head = NULL;
 }

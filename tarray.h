@@ -1,3 +1,4 @@
+///@file tarray.h
 /*********************************************************************
 	This is a class to introduce you to the syntax of working with 
 	template classes. Notice that the type being stored is completely
@@ -20,6 +21,8 @@ class Tarray{
 	//array.
 	// If the array is full, resize is called.
 	void add(T item);
+	///@brief Adds an item to the array
+	///@param Data type T which is defined however the programmer chose
 
 	// iterator functions
 
@@ -31,7 +34,8 @@ class Tarray{
 
 	// moves current index to the next array location
 	void advance();
-
+	///@brief Moves through linked list
+	
    	// returns the array item being referenced by cuurent index
 	T current()const;
 

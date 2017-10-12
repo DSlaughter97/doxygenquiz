@@ -1,3 +1,4 @@
+///@file node.h
 /*************************************************************************
       This file is borrowed heavily from Main/Savitch "Data Structures and
       Other Object Using C++," Chapter 5. It features a node class that 
@@ -21,6 +22,8 @@ class node{
 		{data_field = d;}
 	void set_link(node *l)
 		{link_field = l;}
+	///@brief Links data to create a linked list
+	///@param Takes a node type which contains a link_field and data_field
 
         // Accessor functions
         value_type data() const 

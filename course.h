@@ -1,3 +1,4 @@
+///@file course.h
 /***********************************************************************8
 	This class stores the three essential features of a completed 
 	college course: the course number, the grade received, and the 
@@ -25,6 +26,9 @@ class course{
 	std::string get_grade()const{
 	    return grade;
 	}
+	///@brief Accesses grade for a course
+	///@param String that holds letter grade
+	///@return Returns the letter grade as a string
 	double get_hours()const{
 	    return hours;
     	}

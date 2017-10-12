@@ -1,3 +1,4 @@
+///@file course.cc
 /***********************************************************************
 	The implementation file for course.h, which describes a college
 	course.
@@ -53,7 +54,11 @@ void course::output(std::ostream& outs)const{
 }
 
 
-double course::get_number_grade()const{
+double course::get_number_grade()const
+	///@brief Assigns a number to each letter grade
+	///@param String containing the letter grade
+	///@return Returns a number corresponding to the letter or returns 0 if not letter grade
+{
     if(grade == "A") return 4.0;
     if(grade == "A-") return 3.667;
     if(grade == "B+") return 3.333;
